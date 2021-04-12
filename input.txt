@@ -1,0 +1,13 @@
+<--input.txt
+阻塞代码实例，
+文件读取完后才执行程序。
+//注意是fs.readFileSync! Sync
+
+var fs = require("fs");
+
+var data = fs.readFileSync('input.txt');
+
+console.log(data.toString());
+console.log("程序执行结束!");
+
+-->
